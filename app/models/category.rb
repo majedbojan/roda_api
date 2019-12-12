@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class User < Sequel::Model
+class Category < Sequel::Model
   plugin :json_serializer
-  one_to_many :orders
+  one_to_many :items
 end
