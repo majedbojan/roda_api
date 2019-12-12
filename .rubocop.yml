@@ -1,0 +1,40 @@
+require: rubocop-performance
+
+AllCops:
+  TargetRubyVersion: 2.5.1
+  Exclude:
+    - bin/**
+    - db/**/*
+    - node_modules/**/*
+    - spec/rails_helper.rb
+
+Documentation:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Lint/Void:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 30
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/ClassLength:
+  Max: 1500
+
+Metrics/MethodLength:
+  Max: 25
+
+Metrics/BlockLength:
+  Max: 70
+
+Layout/HashAlignment:
+  EnforcedHashRocketStyle: table
+  EnforcedColonStyle: table
