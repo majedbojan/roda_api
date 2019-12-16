@@ -19,7 +19,11 @@ class App < Roda
   plugin :all_verbs
   plugin :halt
 
-  require './app/models/importable.rb'
+  require './app/models/user.rb'
+  require './app/models/category.rb'
+  require './app/models/item.rb'
+  require './app/models/order.rb'
+
   Unreloader.require('app/controllers/api/v1') {}
 
   route do |r|

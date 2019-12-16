@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require 'pry'
 class App
   hash_branch('users') do |r|
     r.get do
@@ -21,15 +20,12 @@ class App
       r.halt(404) unless @user
 
       r.get do
-        { user: @user.to_json }
         { message: 'Data found', data: { user: @user } }
       end
 
       r.put do
         @user.update(user_params(r))
         { message: 'User Updated successfully', data: { user: @user } }
-
-        { user: @user }
       end
 
       r.delete do
