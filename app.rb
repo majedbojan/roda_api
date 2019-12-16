@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require './config/requires.rb'
+require './config/application.rb'
 
 Config::DB.connect
 
@@ -9,12 +9,15 @@ class App < Roda
   Sequel::Model.plugin :validation_helpers
   Sequel::Model.plugin :timestamps, update_on_create: true # To populate timestamps on record creation
 
-  use Rack::Session::Cookie, secret: 'some_nice_long_random_string_DSKJH4378EYR7EGKUFH', key: '_roda_app_session'
-  use Rack::Protection
-  plugin :csrf
+  # use Rack::Session::Cookie, secret: 'some_nice_long_random_string_DSKJH4378EYR7EGKUFH', key: '_roda_app_session'
+  # use Rack::Protection
+  # plugin :csrf
 
   plugin :head
   plugin :json, classes: [Array, Hash, Sequel::Model], content_type: 'application/json'
+  plugin :json_parser
+  plugin :all_verbs
+  plugin :halt
 
   require './app/models/importable.rb'
   Unreloader.require('app/controllers/api/v1') {}

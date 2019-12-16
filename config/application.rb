@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Requires
+module Application
   require 'pry'
   require 'roda'
   require 'sequel'
