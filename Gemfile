@@ -10,7 +10,7 @@ gem 'erubis', '~> 2.7' # Template syntax
 gem 'pg', '~> 0.18.4'
 gem 'rack-protection', '~> 1.5.3'
 gem 'rack_csrf', '~> 2.5.0'
-gem 'rake'
+gem 'rack', '~> 2.2', '>= 2.2.3'
 gem 'roda', '~> 3.26.0' # Roda web framework
 gem 'sequel', '~> 4.21'
 gem 'tilt', '~> 2.0', '>= 2.0.8' # Templating engine
