@@ -1,6 +1,6 @@
 # Developer Guide
 
-DressUp Backend project.
+Roda API project.
 
 To run this project you need:
 
@@ -54,6 +54,7 @@ In this project I prefered to use [dotenv](https://github.com/bkeepers/dotenv) a
 - use `.env` to set your own keys and your own settings based on you machine, this file is ignored from the repo, so dont push it.
 
 #### Model style
+```powershell
 ## -------------------- Requirements -------------------- ##
 ## ----------------------- Scopes ----------------------- ##
 ## --------------------- Constants ---------------------- ##
@@ -63,6 +64,7 @@ In this project I prefered to use [dotenv](https://github.com/bkeepers/dotenv) a
 ## --------------------- Callbacks ---------------------- ##
 ## ------------------- Class Methods -------------------- ##
 ## ---------------------- Methods ----------------------- ##
+```
 
 **Before Commit**
 
