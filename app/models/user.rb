@@ -25,8 +25,7 @@ class User < Sequel::Model
   end
 
   private
-
-  def encrypt_password
-    self.password_hash = BCrypt::Password.create(password)
-  end
+    def encrypt_password
+      self.password_hash = BCrypt::Password.create(password)
+    end
 end

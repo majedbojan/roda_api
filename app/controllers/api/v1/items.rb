@@ -37,15 +37,14 @@ class App
   end
 
   private
-
-  def item_params(r)
-    prms = r.params
-    {
-      name:        prms['name'],
-      category_id: prms['category_id'],
-      price:       prms['price'],
-      currency:    prms['currency'],
-      color:       prms['color']
-    }
-  end
+    def item_params(r)
+      prms = r.params
+      {
+        name:        prms['name'],
+        category_id: prms['category_id'],
+        price:       prms['price'],
+        currency:    prms['currency'],
+        color:       prms['color']
+      }
+    end
 end

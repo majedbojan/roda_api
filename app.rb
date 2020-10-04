@@ -24,7 +24,7 @@ class App < Roda
   require './app/models/item.rb'
   require './app/models/order.rb'
 
-  Unreloader.require('app/controllers/api/v1') {}
+  Unreloader.require('app/controllers/api/v1') { }
 
   route do |r|
     r.root do

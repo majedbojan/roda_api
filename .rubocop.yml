@@ -11,27 +11,6 @@ AllCops:
     - bin/**
     - db/**/*
     - node_modules/**/*
-    - spec/rails_helper.rb
-
-# Performance:
-#   Exclude:
-#     - '**/test/**/*'
-
-# Prefer assert_not over assert !
-# Rails/AssertNot:
-#   Include:
-#     - '**/test/**/*'
-
-# Prefer assert_not_x over refute_x
-# Rails/RefuteMethods:
-#   Include:
-#     - '**/test/**/*'
-
-Rails/IndexBy:
-  Enabled: true
-
-Rails/IndexWith:
-  Enabled: true
 
 # Prefer &&/|| over and/or.
 Style/AndOr:

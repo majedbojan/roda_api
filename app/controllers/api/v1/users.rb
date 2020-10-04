@@ -37,8 +37,7 @@ class App
   end
 
   private
-
-  def user_params(r)
-    { name: r.params['name'], email: r.params['email'], password_hash: r.params['password'] }
-  end
+    def user_params(r)
+      { name: r.params['name'], email: r.params['email'], password_hash: r.params['password'] }
+    end
 end

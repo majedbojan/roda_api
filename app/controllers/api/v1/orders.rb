@@ -37,14 +37,13 @@ class App
   end
 
   private
-
-  def order_params(r)
-    prms = r.params
-    {
-      name:    prms['name'],
-      user_id: prms['user_id'],
-      item_id: prms['item_id'],
-      address: prms['address']
-    }
-  end
+    def order_params(r)
+      prms = r.params
+      {
+        name:    prms['name'],
+        user_id: prms['user_id'],
+        item_id: prms['item_id'],
+        address: prms['address']
+      }
+    end
 end

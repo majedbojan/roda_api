@@ -37,8 +37,7 @@ class App
   end
 
   private
-
-  def category_params(r)
-    { name: r.params['name'] }
-  end
+    def category_params(r)
+      { name: r.params['name'] }
+    end
 end
