@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-# ./Gemfile
-
 source 'https://rubygems.org'
 
 gem 'bcrypt', '~> 3.1.10'
@@ -19,9 +17,10 @@ gem 'rack-unreloader'
 
 group :development do
   gem 'pry', '~> 0.12.2'
-  gem 'rubocop', require: false
-  gem 'rubocop-performance', require: false
   gem 'sequel-annotate'
+  gem 'rubocop', require: false
+  gem 'rubocop-packaging', require: false
+  gem 'rubocop-performance', require: false
 end
 
 group :development, :test do
